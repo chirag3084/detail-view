@@ -33,3 +33,6 @@ class StudentDetailCustomContextView(DetailView):
 # creating a list view 
 class StudentListView(ListView):
     model = Student 
+
+def home(request):
+    return render(request, 'school/home.html')

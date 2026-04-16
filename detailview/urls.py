@@ -3,6 +3,7 @@ from django.urls import path
 from school import views 
 
 urlpatterns = [
+    path('', views.home, name='home'),
     path('admin/', admin.site.urls), 
     # why use need to pass pk is because it is detailview 
     path('student/<int:pk>/', views.StudentDetailView.as_view(), name='studentdetail'),
